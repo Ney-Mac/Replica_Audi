@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+	
+	<style>
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+
+	}
+	/*body{
+		overflow: hidden;
+		}*/
+		h1{
+			font-size: 4em;
+		}
+		#menu{
+			height: 6.25em;
+			display: flex;
+		}
+		#left{
+			height: 100%;
+			width: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px;
+		}
+		#left #imagem{
+			height: 75px;
+			width: 75px;
+			object-fit: contain;
+		}
+		#left #imagem:hover{
+			cursor: pointer;
+		}
+
+		#center{
+			height: 100%;
+			width: 70%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		#center div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#center div input{
+			border: none;
+			border-radius: 0;
+			font-family: 'Raleway', sans-serif;
+			font-size: 1em;
+			color: #9E9EA7;
+			height: 20%;
+			width: auto;
+		}
+
+		#right{
+			height: 100%;
+			width: 20%;
+			padding-right: 5%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+		#right svg:hover{
+			cursor: pointer;
+		}
+
+		/*...........................................*/
+		#conteudo{
+			width: 100%;
+			height: 450px;
+			display: flex;
+			flex-direction: row;
+			padding-left: 12%;
+			padding-right: 5%;
+			padding-top: 50px;
+			margin: 20px 0;
+		}
+
+		#coluna-1{
+			width: 35%;
+			height: 100%;
+		}
+		#content-mini-linha{
+			width: 100%;
+			height: 15px;
+			margin-bottom: 40px;
+		}
+		#content-mini-linha #Mini_linha{
+			height: 20%;
+			width: 15%;
+			background-color: #000000;
+			border-radius: 10%;
+			margin: 15px 0;
+		}
+		#content-text{
+			margin-bottom: 40px;
+			font-family: 'Raleway', sans-serif;
+		}
+		#content-text #txt_1{
+			color: rgb(139,139,139);
+			font-family: 'Roboto', sans-serif;
+		}
+		#content-button{
+			height: 3em;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			margin-bottom: 40px;
+		}
+		#content-button button{
+			height: 100%;
+			width: 47%;
+			background-color: #ffffff;
+			color: #000000;
+			border: thin solid rgba(0,0,0,0.8);
+		}
+		#content-button button span{
+			font-size: 1.3em;
+		}
+		#content-button button:hover{
+			cursor: pointer;
+		}
+		#content-button #button-1{
+			font-size: 0.7em;
+			font-weight: bold;
+		}
+		#content-button #button-2{
+			color: #FFF;
+			background-color: #000;
+			font-size: 0.7em;
+			font-weight: bold;
+		}
+		#content-model{
+			margin-bottom: 10px;
+		}
+		#content-model #text-h4{
+			position: relative;
+			font-size: 0.8em;
+			margin-bottom: 20px;
+		}
+		#content-model #text-h4::after{
+			content: "";
+			position: absolute;
+			top: 8px;
+			margin-left: 10px;
+			background-color: #000;
+			height: 3px;
+			width: 50px;
+			border-radius: 10%;
+		}
+		#content-model #model-area{
+			display: flex;
+			justify-content: space-between;
+			border-bottom: thin solid rgba(139,139,139,0.8);
+			font-size: 0.8em;
+			color: rgb(139,139,139,0.8);
+		}
+
+		#coluna-2{
+			width: 57%;
+			height: 100%;
+			position: relative;
+		}
+		#imagem-audi{
+			height: 130%;
+			width: 100%;
+			object-fit: contain;
+			position: absolute;
+			top: -80px;
+		}
+
+		#coluna-3{
+			height: 100%;
+			width: 8%;
+			display: flex;
+			justify-content: center;
+		}
+		#coluna-3 ul{
+			list-style: none;
+			width: 100%;
+			height: 100%;
+		}
+		#coluna-3 ul li{
+			height: 9%;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: rgb(139,139,139);
+		}
+		#coluna-3 ul #Q8{
+			background-color: #000;
+			color: #FFF;
+		}
+		#coluna-3 ul #chevronDown{
+			margin-top: 30px;
+			color: #000;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<header id="menu">
+		<div id="left">
+			<img id="imagem" src="Audi-Logo.png">
+		</div>
+		<div id="center">
+			<div>
+				<input type="text" placeholder="SEARCH & AUDI CODE">
+				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				</svg>
+			</div>
+		</div>
+		<div id="right">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+			</svg>
+		</div>
+	</header><!--Fim do menu....................-->
+
+	<div id="conteudo">
+		<div id="coluna-1">
+			<div id="content-mini-linha">
+				<div id="Mini_linha"></div>
+			</div>
+
+			<div  id="content-text">
+				<h1 id="txt_1">The all-new</h1>
+				<h1 id="txt_2">Audi Q8</h1>
+			</div>
+			
+			<div id="content-button">
+				<button id="button-1">SOOCK A TEST DRIVE <span> > </span> </button>
+				<button id="button-2">EXPLORE MORE <span> > </span> </button>
+			</div>
+
+			<div id="content-model">
+				<h4 id="text-h4">DIRECTLY AVALIABLE</h4>
+				<div id="model-area">
+					<h4>MODEL</h4>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+					</svg>
+				</div>
+			</div>
+		</div><!--Fim Coluna 1...............................-->
+
+		<div id="coluna-2">
+			<img src="Audi_T2.png" id="imagem-audi">
+		</div><!--Fim coluna 2 ............................-->
+
+		<div id="coluna-3">
+			<ul>
+				<li>A3</li>
+				<li>A4</li>
+				<li>A5</li>
+				<li>A6</li>
+				<li>A7</li>
+				<li>A8</li>
+				<li>Q2</li>
+				<li>Q3</li>
+				<li>Q5</li>
+				<li>Q7</li>
+				<li id="Q8">Q8</li>
+				<li id="chevronDown">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+					</svg>
+				</li>
+			</ul>
+		</div>
+
+	</div><!--Fim conteudo........................-->
+
+</body>
+</html>
